@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    
+    <div class="calculator">
+        <input type="text" class="result" id="result" disabled>
+        <div class="keypad">
+          <button onclick="addnum('+')" class="opt">+</button>
+          <button onclick="addnum('-')" class="opt">-</button>
+          <button onclick="addnum('*')" class="opt">*</button>
+          <button onclick="addnum('/')" class="opt">/</button>
+
+          <button onclick="addnum(7)" class="num">7</button>
+          <button onclick="addnum(8)" class="num">8</button>
+          <button onclick="addnum(9)" class="num">9</button>
+
+          <button onclick="clearBox()" class="opt">C</button>
+
+          <button onclick="addnum(4)" class="num">4</button>
+          <button onclick="addnum(5)" class="num">5</button>
+          <button onclick="addnum(6)" class="num">6</button>
+
+          <button onclick="removeLastNum()" class="opt">AC</button>
+
+          <button onclick="addnum(1)" class="num">1</button>
+          <button onclick="addnum(2)" class="num">2</button>
+          <button onclick="addnum(3)" class="num">3</button>
+          
+          <button  class="opt" onclick="evaluateNum()">=</button>
+          <button id="qwerty"></button>
+
+          <button onclick="addnum(0)" class="num">0</button>
+
+        </div>
+      </div>
+</body>
+</html>
